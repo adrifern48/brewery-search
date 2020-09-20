@@ -10,8 +10,8 @@ import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
-    root: {
-      flexGrow: 1,
+    appBar: {
+      height: '4em'
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -69,7 +69,7 @@ const AppBar = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.appBar}>
       <MuiAppBar position="static">
         <Toolbar>
           <IconButton
