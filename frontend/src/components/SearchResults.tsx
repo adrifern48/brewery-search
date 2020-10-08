@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const SearchResults = () => {
   const classes = useStyles();
-  const [selectedIndex, setSelectedIndex] = React.useState();
+  const [selectedIndex, setSelectedIndex] = React.useState<number>();
 
   const handleListItemClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,

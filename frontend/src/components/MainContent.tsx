@@ -22,10 +22,10 @@ const MainContent: React.FunctionComponent = () => {
   return (
     <div className={classes.mainContent}>
       <Grid container>
-        <Grid item xs={8}>
+        <Grid item xs={10}>
           <MapContainer />
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={2}>
           <SearchResults />
         </Grid>
       </Grid>

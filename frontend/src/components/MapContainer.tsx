@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import GoogleMapReact from 'google-map-react';
 
-const AnyReactComponent = ({text}: any) => <div>{text}</div>;
+const MapComponent = ({markerContent}: any) => <div>{markerContent}</div>;
 
 const MapContainer = (props: any) => {
     const [center, setCenter] = useState({lat: 37.711776, lng: -120.957784 });
@@ -12,10 +12,10 @@ const MapContainer = (props: any) => {
           defaultCenter={center}
           defaultZoom={zoom}
         >
-          <AnyReactComponent
+          <MapComponent
             lat={37.711776}
             lng={-120.957784}
-            text="My Marker"
+            markerContent="My Marker"
           />
         </GoogleMapReact>
     );
